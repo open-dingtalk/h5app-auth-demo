@@ -5,7 +5,7 @@ import * as dd from 'dingtalk-jsapi';
 //内网穿透工具介绍:
 // https://developers.dingtalk.com/document/resourcedownload/http-intranet-penetration?pnamespace=app
 // 替换成后端服务域名
-const domain = "http://wanzq.vaiwan.com";
+const domain = "http://localhost:8080";
 function App() {
 
 }
