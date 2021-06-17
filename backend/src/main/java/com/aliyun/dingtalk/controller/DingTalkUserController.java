@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 /**
- * 钉钉企业内部小程序DEMO, 实现了根据用户授权码获取用户信息功能
+ * 钉钉h5企业内部应用DEMO, 实现了根据用户授权码获取用户信息功能
  */
 @RestController
 public class DingTalkUserController {
