@@ -2,13 +2,9 @@ package com.aliyun.dingtalk.controller;
 
 import com.aliyun.dingtalk.service.DingTalkUserService;
 import com.aliyun.dingtalk.model.RpcServiceResult;
-import com.dingtalk.api.response.OapiV2UserGetResponse;
-import com.dingtalk.api.response.OapiV2UserGetuserinfoResponse;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * 钉钉企业内部小程序DEMO, 实现了根据用户授权码获取用户信息功能
@@ -16,7 +12,7 @@ import java.util.Map;
 @RestController
 public class DingTalkUserController {
 
-    @Resource
+    @Autowired
     private DingTalkUserService dingTalkUserService;
 
     /**

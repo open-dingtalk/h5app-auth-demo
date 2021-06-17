@@ -57,6 +57,13 @@ npm run build
 
 ![img](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/a/RNErEm4k2S2KW0jV/ed1634c14c5d4aa79cd415e89f74c4162460.png)
 
+### 启动项目使用钉钉访问服务
+
+![img](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/a/RNErEm4k2S2KW0jV/8b7dd238057b4d0a920903214dfbf86e2460.png)
+
+![img](https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/a/RNErEm4k2S2KW0jV/d5fdf50833e54727bd51c21fc91c15cb2460.png)
+
+
 ### 参考文档
 
 1. H5应用接入JSAPI，文档链接：https://developers.dingtalk.com/document/app/logon-free-process?spm=ding_open_doc.document.0.0.6dbdad29INJCRg#topic-2025319
