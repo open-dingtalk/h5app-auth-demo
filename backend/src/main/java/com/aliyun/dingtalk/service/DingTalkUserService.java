@@ -2,6 +2,7 @@ package com.aliyun.dingtalk.service;
 
 import com.aliyun.dingtalk.constant.UrlConstant;
 import com.aliyun.dingtalk.config.AppConfig;
+import com.aliyun.dingtalk.exception.InvokeDingTalkException;
 import com.aliyun.dingtalk.util.AccessTokenUtil;
 import com.dingtalk.api.DefaultDingTalkClient;
 import com.dingtalk.api.DingTalkClient;
@@ -13,8 +14,6 @@ import com.taobao.api.ApiException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Objects;
 
 
 /**
@@ -42,6 +41,7 @@ public class DingTalkUserService {
 
     /**
      * 根据authCode获取用户ID
+     *
      * @param authCode
      * @param accessToken
      * @return
@@ -53,27 +53,23 @@ public class DingTalkUserService {
         OapiV2UserGetuserinfoResponse oapiV2UserGetuserinfoResponse;
         try {
             oapiV2UserGetuserinfoResponse = client.execute(req, accessToken);
-            if (!Objects.isNull(oapiV2UserGetuserinfoResponse)) {
-                if (oapiV2UserGetuserinfoResponse.isSuccess()) {
-                    OapiV2UserGetuserinfoResponse.UserGetByCodeResponse userGetByCodeResponse = oapiV2UserGetuserinfoResponse.getResult();
-                    if (!Objects.isNull(userGetByCodeResponse)) {
-                        return userGetByCodeResponse.getUserid();
-                    }
-                } else {
-                    log.error("获取用户信息失败，errCode:{}, errMsg:{}", oapiV2UserGetuserinfoResponse.getErrcode(), oapiV2UserGetuserinfoResponse.getMsg());
-                }
+            if (oapiV2UserGetuserinfoResponse.isSuccess()) {
+                OapiV2UserGetuserinfoResponse.UserGetByCodeResponse userGetByCodeResponse = oapiV2UserGetuserinfoResponse.getResult();
+                return userGetByCodeResponse.getUserid();
             } else {
-                log.error("获取用户信息响应为空！");
+                throw new InvokeDingTalkException(oapiV2UserGetuserinfoResponse.getErrorCode(), oapiV2UserGetuserinfoResponse.getErrmsg());
             }
+
         } catch (ApiException e) {
             // 需要自己处理异常
             e.printStackTrace();
+            throw new InvokeDingTalkException(e.getErrCode(), e.getErrMsg());
         }
-        return null;
     }
 
     /**
      * 根据用户ID获取用户详情
+     *
      * @param userId
      * @param accessToken
      * @return
@@ -86,19 +82,15 @@ public class DingTalkUserService {
 
         try {
             OapiV2UserGetResponse oapiV2UserGetResponse = client.execute(req, accessToken);
-            if (!Objects.isNull(oapiV2UserGetResponse)) {
-                if (oapiV2UserGetResponse.isSuccess()) {
-                    return oapiV2UserGetResponse.getResult();
-                } else {
-                    log.error("获取用户详情失败，errCode:{}, errMsg:{}", oapiV2UserGetResponse.getErrcode(), oapiV2UserGetResponse.getMsg());
-                }
+            if (oapiV2UserGetResponse.isSuccess()) {
+                return oapiV2UserGetResponse.getResult();
             } else {
-                log.error("获取用户详情响应为空！");
+                throw new InvokeDingTalkException(oapiV2UserGetResponse.getErrorCode(), oapiV2UserGetResponse.getErrmsg());
             }
         } catch (ApiException e) {
             // 需要自己处理异常
             e.printStackTrace();
+            throw new InvokeDingTalkException(e.getErrCode(), e.getErrMsg());
         }
-        return null;
     }
 }

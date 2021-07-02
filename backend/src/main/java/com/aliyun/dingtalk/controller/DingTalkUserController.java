@@ -1,7 +1,7 @@
 package com.aliyun.dingtalk.controller;
 
 import com.aliyun.dingtalk.service.DingTalkUserService;
-import com.aliyun.dingtalk.model.RpcServiceResult;
+import com.aliyun.dingtalk.model.ServiceResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -32,9 +32,9 @@ public class DingTalkUserController {
      * @return
      */
     @GetMapping("/login")
-    public RpcServiceResult login(@RequestParam(value = "authCode") String authCode) {
+    public ServiceResult login(@RequestParam(value = "authCode") String authCode) {
 
-        return RpcServiceResult.getSuccessResult(dingTalkUserService.getUserInfo(authCode));
+        return ServiceResult.getSuccessResult(dingTalkUserService.getUserInfo(authCode));
 
     }
 }

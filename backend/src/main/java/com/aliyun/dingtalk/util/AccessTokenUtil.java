@@ -1,6 +1,7 @@
 package com.aliyun.dingtalk.util;
 
 import com.aliyun.dingtalk.constant.UrlConstant;
+import com.aliyun.dingtalk.exception.InvokeDingTalkException;
 import com.dingtalk.api.DefaultDingTalkClient;
 import com.dingtalk.api.request.OapiGettokenRequest;
 import com.dingtalk.api.response.OapiGettokenResponse;
@@ -38,17 +39,15 @@ public class AccessTokenUtil {
 
         try {
             OapiGettokenResponse response = client.execute(request);
-            if (!Objects.isNull(response)) {
+            if (response.isSuccess()) {
                 return response.getAccessToken();
             } else {
-                log.error("获取accessToken响应为空");
+                throw new InvokeDingTalkException(response.getErrorCode(), response.getErrmsg());
             }
-
         } catch (ApiException e) {
             // 需要自己处理异常
             e.printStackTrace();
+            throw new InvokeDingTalkException(e.getErrCode(), e.getErrMsg());
         }
-
-        return null;
     }
 }

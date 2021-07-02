@@ -3,7 +3,7 @@ package com.aliyun.dingtalk.model;
 /**
  * RPC服务返回结果
  */
-public class RpcServiceResult<T> {
+public class ServiceResult<T> {
 
     private boolean success;
 
@@ -45,16 +45,16 @@ public class RpcServiceResult<T> {
         this.data = data;
     }
 
-    public static <T> RpcServiceResult<T> getSuccessResult(T t) {
-        RpcServiceResult<T> result = new RpcServiceResult<>();
+    public static <T> ServiceResult<T> getSuccessResult(T t) {
+        ServiceResult<T> result = new ServiceResult<>();
         result.setSuccess(true);
         result.setData(t);
 
         return result;
     }
 
-    public static <T> RpcServiceResult<T> getFailureResult(String code, String msg) {
-        RpcServiceResult<T> result = new RpcServiceResult<>();
+    public static <T> ServiceResult<T> getFailureResult(String code, String msg) {
+        ServiceResult<T> result = new ServiceResult<>();
         result.setSuccess(false);
         result.setErrorCode(code);
         result.setErrorMsg(msg);

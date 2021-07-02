@@ -3,7 +3,7 @@
 >
 > **fronted**文件夹下是接入钉钉JSAPI获取authCode，之后使用npm run build打包，将打包好的静态资源放入backend子模块。
 >
-> **backend**子模块是用户授权后，使用authCode获取access_token,之后使用access_token获取用户信息，然后使用用户id获取用户详情。
+> **backend**子模块使用authCode获取access_token,之后使用access_token获取用户信息，然后使用用户id获取用户详情。
 
 ##### 配置应用首页地址
 
