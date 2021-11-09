@@ -45,6 +45,17 @@ start_pierced() {
 
 }
 
+#npm_run_build() {
+#  cd ../fronted
+#  if [ ! -d "node_modules/" ];then
+#    npm install
+#    npm run build
+#  else
+#    npm run build
+#  fi
+#  cd ../backend
+#}
+
 maven_build_package(){
   mvn clean package
   if (( $? ))
@@ -58,6 +69,9 @@ maven_build_package(){
 
 #Start method
 start() {
+   stop
+#   echo ">>>> npm_run_build"
+#   npm_run_build
    echo ">>>> maven_build_package"
    maven_build_package
    echo ">>>> extract_jar"
