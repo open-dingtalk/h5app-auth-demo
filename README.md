@@ -5,6 +5,20 @@
 >
 > **backend**子模块使用authCode获取access_token,之后使用access_token获取用户信息，然后使用用户id获取用户详情。
 
+#### 开发环境准备
+
+##### 钉钉开放平台环境准备
+
+1. 需要有一个钉钉注册企业，如果没有可以创建：https://oa.dingtalk.com/register_new.htm?source=1008_OA&lwfrom=2018122711522903000&succJump=oa#/
+
+2. 成为钉钉开发者，参考文档：https://developers.dingtalk.com/document/app/become-a-dingtalk-developer
+
+3. 登录钉钉开放平台后台创建一个H5应用： https://open-dev.dingtalk.com/#/index
+
+4. 配置应用
+
+   配置开发管理，参考文档：https://developers.dingtalk.com/document/app/configure-orgapp
+
 ##### 配置应用首页地址
 
 ![img](https://img.alicdn.com/imgextra/i4/O1CN01QGY87t1lOZN65XHqR_!!6000000004809-2-tps-2870-1070.png)
@@ -25,11 +39,9 @@ git clone
 https://github.com/open-dingtalk/h5app-auth-demo.git
 ```
 
-### 修改后端服务域名&corpId
-
-![img](https://img.alicdn.com/imgextra/i4/O1CN01if9tOf1uM7ne63QdC_!!6000000006022-2-tps-2590-1138.png)
-
 ### 使用命令行安装依赖&打包
+
+> 如果修改了前端页面需要重新打包，没有修改就不需要
 
 ```txt
 cd fronted/
@@ -49,19 +61,9 @@ npm run build
 
 ![img](https://img.alicdn.com/imgextra/i1/O1CN01RczhFR1wZ4DqhGF0z_!!6000000006321-2-tps-2226-1074.png)
 
-### 将打包好的静态资源文件放入后端服务
-
-![img](https://img.alicdn.com/imgextra/i1/O1CN01R4qEhc1K5nVhtlMrF_!!6000000001113-2-tps-1728-1128.png)
-
-### 替换后端应用配置
-
-![img](https://img.alicdn.com/imgextra/i2/O1CN01rAV4yz1eG8lt4NkSE_!!6000000003843-2-tps-2126-1050.png)
-
 ### 启动项目使用钉钉访问服务
 
-![img](https://img.alicdn.com/imgextra/i3/O1CN01JF5vH91hRXTb17Z5d_!!6000000004274-2-tps-1082-1436.png)
-
-![img](https://img.alicdn.com/imgextra/i2/O1CN01eIF9ym26jHD3GcTfl_!!6000000007697-2-tps-1002-1454.png)
+<img src="https://img.alicdn.com/imgextra/i3/O1CN01WrpXL51uYUWJIdv3v_!!6000000006049-2-tps-720-1158.png" alt="img" style="zoom:50%;" />
 
 
 ### 参考文档
