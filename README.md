@@ -94,6 +94,8 @@ git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 
 ### 启动脚本
 
+执行时将命令中示例参数替换为**应用参数**，在后端项目（脚本同级目录）下运行命令。
+
 **脚本运行命令：**
 
 - **执行linux脚本**
@@ -119,8 +121,6 @@ git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 ```sh
  ./dingBoot-linux.sh start h5-demo 8080 ding1jmkwa4o19bxxxx ua2qNVhleIx14ld6xgoZqtg84EE94sbizRvCimfXrIqYCeyj7b8QvqYxxx 122549400 ding9f50b15bccd1000
 ```
-
-执行时将命令中示例参数替换为**应用参数**，在后端项目（脚本同级目录）下运行命令。
 
 **参数获取方法：**
 
