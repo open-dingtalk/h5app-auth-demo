@@ -27,21 +27,21 @@
 │           │   └── com
 │           │       └── aliyun
 │           │           └── dingtalk
-│           │               ├── Application.java 												----- 启动类
+│           │               ├── Application.java 							----- 启动类
 │           │               ├── config
-│           │               │   └── AppConfig.java 											----- 应用配置类
+│           │               │   └── AppConfig.java 					----- 应用配置类
 │           │               ├── constant
-│           │               │   └── UrlConstant.java										----- 接口API
+│           │               │   └── UrlConstant.java					----- 接口API
 │           │               ├── controller
-│           │               │   ├── DingTalkConfig.java									----- 获取配置接口 
-│           │               │   └── DingTalkUserController.java					----- 核心业务接口
+│           │               │   ├── DingTalkConfig.java						----- 获取配置接口 
+│           │               │   └── DingTalkUserController.java			----- 核心业务接口
 │           │               ├── service
-│           │               │   └── DingTalkUserService.java						----- 核心业务代码
+│           │               │   └── DingTalkUserService.java		----- 核心业务代码
 │           └── resources
-│               └── application.properties							----- 应用配置文件
+│               └── application.properties				----- 应用配置文件
 ├── fronted
 │   └── src
-│       └── App.js																			----- 前端展示页面和交互代码
+│       └── App.js															----- 前端展示页面和交互代码
 └── pom.xml
 ```
 
