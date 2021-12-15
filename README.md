@@ -130,7 +130,7 @@ git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 
 2. 进入应用开发-企业内部开发-点击进入应用-基础信息-获取appKey、appSecret、agentId
 
-![](https://img.alicdn.com/imgextra/i3/O1CN01uXBdba1N6CkEp3TiH_!!6000000001520-2-tps-897-467.png)
+![](https://img.alicdn.com/imgextra/i3/O1CN01Rpfg001aSjEIczA85_!!6000000003329-2-tps-905-464.png)
 
 ### 启动后配置
 
@@ -182,7 +182,7 @@ app:
 
 2. 进入应用开发-企业内部开发-点击进入应用-基础信息-获取appKey、appSecret、agentId
 
-![](https://img.alicdn.com/imgextra/i3/O1CN01uXBdba1N6CkEp3TiH_!!6000000001520-2-tps-897-467.png)
+![](https://img.alicdn.com/imgextra/i3/O1CN01Rpfg001aSjEIczA85_!!6000000003329-2-tps-905-464.png)
 
 ### 修改前端页面
 
