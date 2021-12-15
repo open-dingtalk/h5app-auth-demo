@@ -57,7 +57,7 @@
 
   配置开发管理，参考文档：https://developers.dingtalk.com/document/app/configure-orgapp
 
-  **此处配置“应用首页地址”需公网地址，若无公网ip，可使用钉钉内网穿透工具：**https://developers.dingtalk.com/document/resourcedownload/http-intranet-penetration
+  **此处配置“应用首页地址”需公网地址，若无公网ip，可使用钉钉内网穿透工具：** https://developers.dingtalk.com/document/resourcedownload/http-intranet-penetration
 
   ![img](https://img.alicdn.com/imgextra/i4/O1CN01QGY87t1lOZN65XHqR_!!6000000004809-2-tps-2870-1070.png)
 
