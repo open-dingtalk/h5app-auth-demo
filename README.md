@@ -10,7 +10,7 @@
 >
 > **backend**：后端模块，使用springboot构建，主要功能有：使用authCode获取access_token、使用access_token获取用户信息、使用用户id获取用户详情等。
 
-以下为目录结构与核心代码文件：
+以下为目录结构与部分核心代码文件：
 
 ```
 .
