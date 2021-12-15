@@ -154,7 +154,7 @@ git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 
 ![](https://img.alicdn.com/imgextra/i4/O1CN01DTtp4E1qAtfDeGORj_!!6000000005456-2-tps-1414-479.png)
 
-## 手动启动
+## 手动启动（与脚本启动二选一）
 
 ### 下载项目
 
