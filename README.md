@@ -35,8 +35,8 @@
 │           │               ├── controller
 │           │               │   ├── DingTalkConfig.java     ----- 获取配置接口 
 │           │               │   └── DingTalkUserController.java     ----- 核心业务接口
-│           │               ├── service
-│           │               │   └── DingTalkUserService.java     ----- 核心业务代码
+│           │               └── service
+│           │                   └── DingTalkUserService.java     ----- 核心业务代码
 │           └── resources
 │               └── application.properties     ----- 应用配置文件
 ├── fronted
