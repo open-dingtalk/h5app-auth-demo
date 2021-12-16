@@ -1,10 +1,10 @@
 # 钉钉用户免登Demo
 
-## 功能介绍
+## 1. 功能介绍
 
 “应用免登录”是指当用户点击一个应用时，无需单独手动输入钉钉用户名和密码，应用程序可自动获取当前用户的钉钉身份，通过钉钉的身份登录应用。
 
-## 项目结构
+## 2. 项目结构
 
 > **fronted**：前端模块，使用react构建，主要功能有：接入钉钉JSAPI获取authCode、展示免登用户信息。
 >
@@ -45,7 +45,7 @@
 └── pom.xml
 ```
 
-## 开发环境准备
+## 3. 开发环境准备
 
 1. 需要有一个钉钉注册企业，如果没有可以创建：https://oa.dingtalk.com/register_new.htm#/
 
@@ -67,11 +67,13 @@
 
 ![img](https://img.alicdn.com/imgextra/i2/O1CN01n0QZM321k7rcBwfsr_!!6000000007022-2-tps-2822-1080.png)
 
-## 脚本启动（推荐）
+## 4. 启动项目
+
+### 4.1 脚本启动（推荐）
 
 脚本启动，只需执行一条命令即可启动项目，方便快速体验。
 
-### 脚本说明
+#### 脚本说明
 
 脚本启动前置条件：
 
@@ -86,13 +88,13 @@ dingBoot-mac.sh       # mac版本
 dingBoot-windows.bat  # windows版本
 ```
 
-### 下载项目
+#### 下载项目
 
 ```shell
 git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 ```
 
-### 启动脚本
+#### 启动脚本
 
 执行时将命令中示例参数替换为**应用参数**，在后端项目（脚本同级目录）下运行命令。
 
@@ -132,7 +134,7 @@ git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 
 ![](https://img.alicdn.com/imgextra/i3/O1CN01Rpfg001aSjEIczA85_!!6000000003329-2-tps-905-464.png)
 
-### 启动后配置
+#### 启动后配置
 
 1. **配置访问地址**
 
@@ -154,15 +156,15 @@ git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 
 ![](https://img.alicdn.com/imgextra/i4/O1CN01DTtp4E1qAtfDeGORj_!!6000000005456-2-tps-1414-479.png)
 
-## 手动启动（与脚本启动二选一）
+### 4.2 手动启动（与脚本启动二选一）
 
-### 下载项目
+#### 下载项目
 
 ```shell
 git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 ```
 
-### 配置应用参数
+#### 配置应用参数
 
 获取到以下参数，修改后端application.properties
 
@@ -184,7 +186,7 @@ app:
 
 ![](https://img.alicdn.com/imgextra/i3/O1CN01Rpfg001aSjEIczA85_!!6000000003329-2-tps-905-464.png)
 
-### 修改前端页面
+#### 修改前端页面
 
 **打开项目，命令行中执行以下命令，编译打包生成build文件**（如果不修改页面，则可跳过此步骤）
 
@@ -198,7 +200,7 @@ npm run build
 
 ![image-20210706173224172](https://img.alicdn.com/imgextra/i2/O1CN01QLp1Qw1TCVrPddfjZ_!!6000000002346-2-tps-322-521.png)
 
-### 启动项目
+#### 启动项目
 
 - 启动SpringBoot（运行启动类Application.java）
 
@@ -206,12 +208,12 @@ npm run build
 
 - 移动端/PC端钉钉点击工作台，找到应用，进入应用体验demo
 
-### 页面展示
+## 5. 页面展示
 
 <img src="https://img.alicdn.com/imgextra/i3/O1CN01WrpXL51uYUWJIdv3v_!!6000000006049-2-tps-720-1158.png" alt="img" style="zoom:50%;" />
 
 
-### 参考文档
+## 6. 参考文档
 
 1. H5应用接入JSAPI，文档链接：https://developers.dingtalk.com/document/app/logon-free-process?spm=ding_open_doc.document.0.0.6dbdad29INJCRg#topic-2025319
 2. 获取企业内部应用access_token，文档链接：https://developers.dingtalk.com/document/app/obtain-orgapp-token?spm=ding_open_doc.document.0.0.938247e54bE13v#topic-1936350
