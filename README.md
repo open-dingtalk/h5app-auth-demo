@@ -73,7 +73,7 @@
 
 脚本启动，只需执行一条命令即可启动项目，方便快速体验。
 
-#### 脚本说明
+#### 1. 脚本说明
 
 脚本启动前置条件：
 
@@ -88,13 +88,13 @@ dingBoot-mac.sh       # mac版本
 dingBoot-windows.bat  # windows版本
 ```
 
-#### 下载项目
+#### 2. 下载项目
 
 ```shell
 git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 ```
 
-#### 启动脚本
+#### 3. 启动脚本
 
 执行时将命令中示例参数替换为**应用参数**，在后端项目（脚本同级目录）下运行命令。
 
@@ -134,7 +134,7 @@ git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 
 ![](https://img.alicdn.com/imgextra/i3/O1CN01Rpfg001aSjEIczA85_!!6000000003329-2-tps-905-464.png)
 
-#### 启动后配置
+#### 4. 启动后配置
 
 1. **配置访问地址**
 
@@ -158,13 +158,13 @@ git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 
 ### 4.2 手动启动（与脚本启动二选一）
 
-#### 下载项目
+#### 1. 下载项目
 
 ```shell
 git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 ```
 
-#### 配置应用参数
+#### 2. 配置应用参数
 
 获取到以下参数，修改后端application.properties
 
@@ -186,7 +186,7 @@ app:
 
 ![](https://img.alicdn.com/imgextra/i3/O1CN01Rpfg001aSjEIczA85_!!6000000003329-2-tps-905-464.png)
 
-#### 修改前端页面
+#### 3. 修改前端页面
 
 **打开项目，命令行中执行以下命令，编译打包生成build文件**（如果不修改页面，则可跳过此步骤）
 
@@ -200,7 +200,7 @@ npm run build
 
 ![image-20210706173224172](https://img.alicdn.com/imgextra/i2/O1CN01QLp1Qw1TCVrPddfjZ_!!6000000002346-2-tps-322-521.png)
 
-#### 启动项目
+#### 4. 启动项目
 
 - 启动SpringBoot（运行启动类Application.java）
 
