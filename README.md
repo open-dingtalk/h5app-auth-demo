@@ -73,7 +73,7 @@
 
 脚本启动，只需执行一条命令即可启动项目，方便快速体验。
 
-#### 1. 脚本说明
+#### 4.1.1 脚本说明
 
 ① 脚本启动前置条件：
 
@@ -88,13 +88,13 @@ dingBoot-mac.sh       # mac版本
 dingBoot-windows.bat  # windows版本
 ```
 
-#### 2. 下载项目
+#### 4.1.2 下载项目
 
 ```shell
 git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 ```
 
-#### 3. 启动脚本
+#### 4.1.3 启动脚本
 
 执行时将命令中示例参数替换为**应用参数**，在后端项目（脚本同级目录）下运行命令。
 
@@ -130,37 +130,31 @@ git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 
 - 进入应用开发-企业内部开发-点击进入应用-基础信息-获取appKey、appSecret、agentId ![](https://img.alicdn.com/imgextra/i3/O1CN01Rpfg001aSjEIczA85_!!6000000003329-2-tps-905-464.png)
 
-#### 4. 启动后配置
+#### 4.1.4 启动后配置
 
 ① **配置访问地址**
 
 启动完成会自动生成临时域名，配置方法：进入开发者后台->进入应用->开发管理->应用首页地址和PC端首页地址
 
-生成的域名：
+- 生成的域名： ![](https://img.alicdn.com/imgextra/i3/O1CN01lN8Myr1XIFJmlDSWf_!!6000000002900-2-tps-898-510.png)
 
-![](https://img.alicdn.com/imgextra/i3/O1CN01lN8Myr1XIFJmlDSWf_!!6000000002900-2-tps-898-510.png)
-
-配置地址：
-
-![](https://img.alicdn.com/imgextra/i1/O1CN01IWleEp1Kw0hX9suby_!!6000000001227-2-tps-1408-489.png)
+- 配置地址： ![](https://img.alicdn.com/imgextra/i1/O1CN01IWleEp1Kw0hX9suby_!!6000000001227-2-tps-1408-489.png)
 
 ② **发布应用**
 
 配置好地址后进入“版本管理与发布页面”，发布应用，发布后即可在PC钉钉或移动钉钉工作台访问应用
 
-**发布应用：**
-
-![](https://img.alicdn.com/imgextra/i4/O1CN01DTtp4E1qAtfDeGORj_!!6000000005456-2-tps-1414-479.png)
+- 发布应用： ![](https://img.alicdn.com/imgextra/i4/O1CN01DTtp4E1qAtfDeGORj_!!6000000005456-2-tps-1414-479.png)
 
 ### 4.2 手动启动（与脚本启动二选一）
 
-#### 1. 下载项目
+#### 4.2.1 下载项目
 
 ```shell
 git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 ```
 
-#### 2. 配置应用参数
+#### 4.2.2 配置应用参数
 
 获取到以下参数，修改后端application.properties
 
@@ -178,7 +172,7 @@ app:
 
 - 进入应用开发-企业内部开发-点击进入应用-基础信息-获取appKey、appSecret、agentId ![](https://img.alicdn.com/imgextra/i3/O1CN01Rpfg001aSjEIczA85_!!6000000003329-2-tps-905-464.png)
 
-#### 3. 修改前端页面
+#### 4.2.3 修改前端页面
 
 **打开项目，命令行中执行以下命令，编译打包生成build文件**（如果不修改页面，则可跳过此步骤）
 
@@ -192,7 +186,7 @@ npm run build
 
 ![image-20210706173224172](https://img.alicdn.com/imgextra/i2/O1CN01QLp1Qw1TCVrPddfjZ_!!6000000002346-2-tps-322-521.png)
 
-#### 4. 启动项目
+#### 4.2.4 启动项目
 
 - 启动SpringBoot（运行启动类Application.java）
 
