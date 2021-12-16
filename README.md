@@ -55,13 +55,13 @@
 
 4. 配置应用：
 
-  配置开发管理，参考文档：https://developers.dingtalk.com/document/app/configure-orgapp
+  ① 配置开发管理，参考文档：https://developers.dingtalk.com/document/app/configure-orgapp
 
   **此处配置“应用首页地址”需公网地址，若无公网ip，可使用钉钉内网穿透工具：** https://developers.dingtalk.com/document/resourcedownload/http-intranet-penetration
 
   ![img](https://img.alicdn.com/imgextra/i4/O1CN01QGY87t1lOZN65XHqR_!!6000000004809-2-tps-2870-1070.png)
 
-  配置相关权限，参考文档：https://developers.dingtalk.com/document/app/address-book-permissions
+  ② 配置相关权限，参考文档：https://developers.dingtalk.com/document/app/address-book-permissions
 
   本demo使用接口权限："成员信息读权限"
 
@@ -75,12 +75,12 @@
 
 #### 1. 脚本说明
 
-脚本启动前置条件：
+① 脚本启动前置条件：
 
-1. 安装配置了java开发环境（jdk、maven）
-2. 安装配置了git工具
+- 安装配置了java开发环境（jdk、maven）
+- 安装配置了git工具
 
-脚本类型如下：
+② 脚本类型如下：
 
 ```shell
 dingBoot-linux.sh     # linux版本
@@ -98,7 +98,7 @@ git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 
 执行时将命令中示例参数替换为**应用参数**，在后端项目（脚本同级目录）下运行命令。
 
-**脚本运行命令：**
+① **脚本运行命令：**
 
 - **执行linux脚本**
 
@@ -124,7 +124,7 @@ git clone https://github.com/open-dingtalk/h5app-auth-demo.git
  ./dingBoot-linux.sh start h5-demo 8080 ding1jmkwa4o19bxxxx ua2qNVhleIx14ld6xgoZqtg84EE94sbizRvCimfXrIqYCeyj7b8QvqYxxx 122549400 ding9f50b15bccd1000
 ```
 
-**参数获取方法：**
+② **参数获取方法：**
 
 1. 获取corpId——开发者后台首页：https://open-dev.dingtalk.com/#/index
 
