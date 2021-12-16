@@ -126,29 +126,25 @@ git clone https://github.com/open-dingtalk/h5app-auth-demo.git
 
 ② **参数获取方法：**
 
-1. 获取corpId——开发者后台首页：https://open-dev.dingtalk.com/#/index
+- 获取corpId——开发者后台首页：https://open-dev.dingtalk.com/#/index ![](https://img.alicdn.com/imgextra/i2/O1CN01amtWue1l5nAYRc2hd_!!6000000004768-2-tps-1414-321.png)
 
-![](https://img.alicdn.com/imgextra/i2/O1CN01amtWue1l5nAYRc2hd_!!6000000004768-2-tps-1414-321.png)
-
-2. 进入应用开发-企业内部开发-点击进入应用-基础信息-获取appKey、appSecret、agentId
-
-![](https://img.alicdn.com/imgextra/i3/O1CN01Rpfg001aSjEIczA85_!!6000000003329-2-tps-905-464.png)
+- 进入应用开发-企业内部开发-点击进入应用-基础信息-获取appKey、appSecret、agentId ![](https://img.alicdn.com/imgextra/i3/O1CN01Rpfg001aSjEIczA85_!!6000000003329-2-tps-905-464.png)
 
 #### 4. 启动后配置
 
-1. **配置访问地址**
+① **配置访问地址**
 
 启动完成会自动生成临时域名，配置方法：进入开发者后台->进入应用->开发管理->应用首页地址和PC端首页地址
 
-**生成的域名：**
+生成的域名：
 
 ![](https://img.alicdn.com/imgextra/i3/O1CN01lN8Myr1XIFJmlDSWf_!!6000000002900-2-tps-898-510.png)
 
-**配置地址：**
+配置地址：
 
 ![](https://img.alicdn.com/imgextra/i1/O1CN01IWleEp1Kw0hX9suby_!!6000000001227-2-tps-1408-489.png)
 
-2. **发布应用**
+② **发布应用**
 
 配置好地址后进入“版本管理与发布页面”，发布应用，发布后即可在PC钉钉或移动钉钉工作台访问应用
 
