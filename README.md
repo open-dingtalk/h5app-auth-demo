@@ -174,13 +174,9 @@ app:
 
 参数获取方法：登录开发者后台
 
-1. 获取corpId：https://open-dev.dingtalk.com/#/index
+- 获取corpId——开发者后台首页：https://open-dev.dingtalk.com/#/index ![](https://img.alicdn.com/imgextra/i2/O1CN01amtWue1l5nAYRc2hd_!!6000000004768-2-tps-1414-321.png)
 
-![](https://img.alicdn.com/imgextra/i2/O1CN01amtWue1l5nAYRc2hd_!!6000000004768-2-tps-1414-321.png)
-
-2. 进入应用开发-企业内部开发-点击进入应用-基础信息-获取appKey、appSecret、agentId
-
-![](https://img.alicdn.com/imgextra/i3/O1CN01Rpfg001aSjEIczA85_!!6000000003329-2-tps-905-464.png)
+- 进入应用开发-企业内部开发-点击进入应用-基础信息-获取appKey、appSecret、agentId ![](https://img.alicdn.com/imgextra/i3/O1CN01Rpfg001aSjEIczA85_!!6000000003329-2-tps-905-464.png)
 
 #### 3. 修改前端页面
 
