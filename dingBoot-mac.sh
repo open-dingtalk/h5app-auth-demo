@@ -21,24 +21,24 @@ is_exist() {
 }
 
 extract_jar() {
-  if [ ! -d "target/" ];then
+  if [ ! -d "backend/target/" ];then
     exit 1
   else
-    mv target/*.jar ./${APP_NAME}
-    rm -rf target/
+    mv backend/target/*.jar ./${APP_NAME}
+    rm -rf backend/target/
   fi
 
 }
 
 start_pierced() {
-  cd ../../
+  cd ../
   if [ ! -d "pierced/" ];then
     git clone https://github.com/open-dingtalk/pierced.git
-    cd pierced/linux
+    cd pierced/mac_64
     chmod 777 ./ding
     ./ding -config=./ding.cfg -subdomain=${appKey} $port
   else
-    cd pierced/linux
+    cd pierced/mac_64
     chmod 777 ./ding
     ./ding -config=./ding.cfg -subdomain=${appKey} $port
   fi
