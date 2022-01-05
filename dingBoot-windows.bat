@@ -11,4 +11,4 @@ if not exist ../pierced (
 )
 
 start cmd /k "mvn clean package && move backend/target/*.jar ./%appName%.jar && java -jar %appName%.jar --port=%port% --appKey=%appKey% --appSecret=%appSecret% --agentId=%agentId% --corpId=%corpId%s"
-start cmd /k "../pierced/windows_64/ding -config=ding.cfg  -subdomain=%appKey% %port%"
+start cmd /k "cd ../pierced/windows_64 && ding -config=ding.cfg  -subdomain=%appKey% %port%"
