@@ -46,7 +46,7 @@ start_pierced() {
 }
 
 #npm_run_build() {
-#  cd ../fronted
+#  cd ../frontend
 #  if [ ! -d "node_modules/" ];then
 #    npm install
 #    npm run build

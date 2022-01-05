@@ -6,7 +6,7 @@
 
 ## 2. 项目结构
 
-> **fronted**：前端模块，使用react构建，主要功能有：接入钉钉JSAPI获取authCode、展示免登用户信息。
+> **frontend**：前端模块，使用react构建，主要功能有：接入钉钉JSAPI获取authCode、展示免登用户信息。
 >
 > **backend**：后端模块，使用springboot构建，主要功能有：使用authCode获取access_token、使用access_token获取用户信息、使用用户id获取用户详情等。
 
@@ -39,7 +39,7 @@
 │           │                   └── DingTalkUserService.java     ----- 核心业务代码
 │           └── resources
 │               └── application.properties     ----- 应用配置文件
-├── fronted
+├── frontend
 │   └── src
 │       └── App.js     ----- 前端展示页面和交互代码
 └── pom.xml
@@ -177,7 +177,7 @@ app:
 **打开项目，命令行中执行以下命令，编译打包生成build文件**（如果不修改页面，则可跳过此步骤）
 
 ```shell
-cd front-end
+cd frontend
 npm install
 npm run build
 ```
