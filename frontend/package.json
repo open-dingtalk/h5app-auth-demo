@@ -15,8 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp -R ./build/* ../backend/src/main/resources/static",
-    "build-windows": "react-scripts build && move /y ./build/* ../backend/src/main/resources/static",
+    "build": "react-scripts build",
+    "build-windows": "react-scripts build && xcopy build\\* ..\\backend\\src\\main\\resources\\static\\ /E /Y",
     "build-linux": "react-scripts build && cp -R ./build/* ../backend/src/main/resources/static",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
