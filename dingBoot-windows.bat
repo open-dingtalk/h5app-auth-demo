@@ -10,5 +10,5 @@ if not exist ../pierced (
     git clone https://github.com/open-dingtalk/pierced.git ../pierced
 )
 
-start cmd /k "mvn clean package && move backend\target\*.jar %appName%.jar && java -jar %appName%.jar --port=%port% --appKey=%appKey% --appSecret=%appSecret% --agentId=%agentId% --corpId=%corpId%s"
+start cmd /k "mvn clean package && move backend\target\*.jar %appName%.jar && java -jar %appName%.jar --port=%port% --appKey=%appKey% --appSecret=%appSecret% --agentId=%agentId% --corpId=%corpId%"
 start cmd /k "cd ../pierced/windows_64 && ding -config=ding.cfg  -subdomain=%appKey% %port%"
